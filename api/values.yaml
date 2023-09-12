@@ -2,17 +2,17 @@ replicaCount: 1
 
 image:
   name: service-hello-api
-  repository: pracdocker/server-hello-api
+  repository: gcr.io/dataflow-chiper/hello-server/main:183c662
   pullPolicy: IfNotPresent
   tag: "1"
   
 service:
   type: ClusterIP
   port: 80
-  targetport: 5050
+  targetport: 3000
   name: service-hello-api
 
 
 configMap:
   data:
-    NAME: batmanrl
+    NAME: MICHAEL
