@@ -2,9 +2,9 @@ replicaCount: 1
 
 image:
   name: service-hello-api
-  repository: gcr.io/dataflow-chiper/hello-server/main:183c662
+  repository: gcr.io/dataflow-chiper/hello-server/main
   pullPolicy: IfNotPresent
-  tag: "1"
+  tag: "183c662"
   
 service:
   type: ClusterIP
