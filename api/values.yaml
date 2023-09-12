@@ -1,0 +1,18 @@
+replicaCount: 1
+
+image:
+  name: service-hello-api
+  repository: pracdocker/server-hello-api
+  pullPolicy: IfNotPresent
+  tag: "1"
+  
+service:
+  type: ClusterIP
+  port: 80
+  targetport: 5050
+  name: service-hello-api
+
+
+configMap:
+  data:
+    NAME: batmanrl
